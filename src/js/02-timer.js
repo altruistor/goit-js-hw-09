@@ -12,8 +12,8 @@ const hourEl = document.querySelector('span[data-hours]');
 const minuteEl = document.querySelector('span[data-minutes]');
 const secondEl = document.querySelector('span[data-seconds]');
 const divTimer = document.querySelector("div");
-const divValue = document.querySelector(".field");
-const divLabel = document.querySelector(". label");
+// const divValue = document.querySelector(".field");
+// const divLabel = document.querySelector(". label");
 
 
 
@@ -49,6 +49,7 @@ btn.addEventListener('click', () => {
         const deltaTime = flatpickrEl.selectedDates[0].getTime() - currentTime.getTime();
         convertMs(deltaTime);
     }, 1000);
+    
 
 });
 
